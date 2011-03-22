@@ -26,7 +26,16 @@ namespace DrupalREST
 
             var result = HttpPost(this.DrupalEndpoint + "user/login/", postables);
 
-            //TOOD: Handle result to extract session informatino which needs to be stored for future authenticated requests
+            //TODO: Handle result to extract session informatino which needs to be stored for future authenticated requests
+            return result;
+        }
+
+        //pass this guy a node id and it will return the raw node
+        public string RetrieveNode(int nid)
+        {
+            var result = HttpGet(this.DrupalEndpoint + "node/" + nid);
+
+            //TODO: Handle the result to make it more usable.
             return result;
         }
 
