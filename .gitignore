@@ -1,0 +1,7 @@
+# Visual Studio
+bin
+obj
+*.user
+*.suo
+*.vsp
+*.csproj.VisualState.xml
